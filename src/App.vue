@@ -1,15 +1,22 @@
 <template>
+<div>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--mandando props a componente Titulo.vue-->
+  <Titulo texto="EL BANCO DE FER DINÁMICO 2.0"/>
+  <Cuenta/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import Titulo from './components/Titulo.vue'
+import Cuenta from './components/Cuenta.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Titulo,
+    Cuenta
   }
 }
 </script>
